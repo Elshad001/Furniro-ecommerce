@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+}
+.active {
+
+    @apply font-bold ;
+    @apply text-primary
+}
+
+.grid-gallery
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap:45px;
+    grid-row-gap:45px;
+  
+}
+
+.grid-gallery .grid1 {
+    grid-area: 1 / 2 / 4 / 2;
+}
+
+.grid-gallery  .grid2 {
+    grid-area: 1 / 2 / 12 / 6;
+}
+
+.grid-gallery  .grid3 {
+    grid-area: 2 / 6 / 5 / 8;
+}
+
+.grid-gallery  .grid4 {
+    grid-area: 1 / 8 / 6 / 10;
+}
+.grid-gallery  .grid5 {
+    grid-area: 1 / 10/ 4 / 13;
+}
+.grid-gallery  .grid6  {
+    
+    grid-area: 2 / 1 / 6 / 3;
+}
+.grid-gallery .grid7 {
+    grid-area: 3 / 3 / 5 / 6;
+}
+
+.grid-gallery  .grid8 {
+    grid-area: 3 / 8 / 12 / 12;
+}
+
+.grid-gallery  .grid9 {
+    grid-area: 4/ 12 / 8 / 10;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  ::-webkit-scrollbar {
+    width:5px;
+  }
+  ::-moz-scrollbar {
+    width:5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 5px;
+  }
+
+  ::-moz-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+
+  .filter{
+    min-height:300px;
+  }
+
+  

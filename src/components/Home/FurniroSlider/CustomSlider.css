@@ -1,0 +1,25 @@
+
+
+.slick-slide
+{
+    transform: scale(0.8);
+    transition: all 0.4 ease-in-out;
+    padding:40px;
+}
+
+.slick-slide img
+{
+    transition: all 1em ease-in-out;
+}
+
+
+.slick-current {
+   scale:120%;
+   transition: all 1em ease-in-out;
+  }
+
+  .slick-dots
+  {
+    margin-left:70px;
+    margin-bottom:50px;
+  }
